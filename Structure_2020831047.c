@@ -23,9 +23,9 @@ int main()
 			x+=p[i].score[j];
 		}
 		x=x/5;
-		for(int k=0; k<5; k++){
-		y=sqrt(((p[0].score[k]-x)*(p[0].score[k]-x)+(p[1].score[k]-x)*(p[1].score[k]-x)+(p[2].score[k]-x)*(p[2].score[k]-x))/5);
-		}
+
+		y=sqrt(((p[0].score[0]-x)*(p[0].score[0]-x)+(p[0].score[1]-x)*(p[0].score[1]-x)+(p[0].score[2]-x)*(p[0].score[2]-x)+(p[0].score[3]-x)*(p[0].score[3]-x)+(p[0].score[4]-x)*(p[0].score[4]-x))/5);
+
 		a[i]=y;
 	}
 	int i=0,num=0;
